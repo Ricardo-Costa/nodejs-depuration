@@ -1,6 +1,7 @@
-# Nodejs Depuration Instructions
+# Nodejs Depuration
+> Nodejs depuration instructions with **inspect**. Show how make depuration with nodejs with the native tools
 
-> Show how make depuration with nodejs with the native tools
+## Console
 
 **Inspector Client**
 - Start application with inspect option: `node inspect src/server.js`
@@ -13,11 +14,11 @@
   const b = a;
   debugger;
   ```
-- Digite `c` and press `enter` to continue.
+- Type `c` and press `enter` to continue.
   ```bash
   debug> c
   ```
-- Digite the function `list(<line-numbers-of-file>)` to show file part.
+- Type the function `list(<line-numbers-of-file>)` to show file part.
   ```bash
   debug> list(100)
   ```
@@ -26,7 +27,7 @@
   debug> exec a
   ```
 - Exit press `Ctrl+c` twice.
-- Also, digite `r` and press `enter` to restart depuration.
+- Also, type `r` and press `enter` to restart depuration.
   ```bash
   debug> r
   ```
@@ -44,6 +45,44 @@
   debug> watch('a > 2')
   debug> r
   ```
+
+## Browser
+
+Start application with command:
+```bash
+node --inspect src/server.js
+```
+You'll be able to access on Chrome Dev could see:
+
+![img 1](./docs/imgs/browser-open.png)
+
+![img 2](./docs/imgs/browser-running.png)
+
+![img 2](./docs/imgs/browser-file.png)
+
+## VsCode
+
+In `.vscode` dir, create file named `launch.json` with the content:
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/src/server.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    }
+  ]
+} 
+``` 
+Go to the file `src/server.js`, set break point and press `F5`:
+
+![VsCode Debug](./docs/imgs/vscode-debug.png)
+
 
 **References**
 - https://nodejs.org/dist/latest-v16.x/docs/api/debugger.html
