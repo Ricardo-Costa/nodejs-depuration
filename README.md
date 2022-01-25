@@ -28,7 +28,11 @@ debug> exec a
 - Exit press `Ctrl+c` twice.
 - Also, digite `r` and press `enter` to restart depuration.
 ```bash
-debug> restart
+debug> r
+```
+- Also, digite `s` and press `enter` go to next step.
+```bash
+debug> s
 ```
 
 **References**
