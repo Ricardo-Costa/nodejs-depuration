@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-depuration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ricardo-Costa/nodejs-depuration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ricardo-Costa/nodejs-depuration/issues"
+  },
+  "homepage": "https://github.com/Ricardo-Costa/nodejs-depuration#readme"
+}
