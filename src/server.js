@@ -8,6 +8,10 @@ debugger;
 
 const server = http.createServer((req, res) => {
   a = 321;
+  let r = req;
+
+  debugger;
+
   res.end('Hello World!!');
 })
 

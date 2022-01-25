@@ -26,7 +26,7 @@ debug> list(100)
 debug> exec a
 ```
 - Exit press `Ctrl+c` twice.
-- Also, digite `restart` and press `enter` to restart depuration.
+- Also, digite `r` and press `enter` to restart depuration.
 ```bash
 debug> restart
 ```
