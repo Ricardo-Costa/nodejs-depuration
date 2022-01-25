@@ -36,7 +36,7 @@ debug> s
 ```
 - User `o` and press `enter` go to back step.
 ```bash
-debug> s
+debug> o
 ```
 
 **References**
