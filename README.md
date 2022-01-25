@@ -30,7 +30,11 @@ debug> exec a
 ```bash
 debug> r
 ```
-- Also, digite `s` and press `enter` go to next step.
+- Use `s` and press `enter` go to next step.
+```bash
+debug> s
+```
+- User `o` and press `enter` go to back step.
 ```bash
 debug> s
 ```
