@@ -1,6 +1,13 @@
 # Nodejs Depuration
 > Nodejs depuration instructions with **inspect**. Show how make depuration with nodejs with the native tools
 
+## Tools
+- NodeJs
+- Curl
+- Docker
+- VSCode
+- Browser
+
 ## Console
 
 **Inspector Client**
