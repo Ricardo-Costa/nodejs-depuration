@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Docker: Attach to Node",
+      "remoteRoot": "${workspaceFolder}/src",
+      "localRoot": "${workspaceFolder}/src",
+      "request": "attach",
+      "type": "node"
+    }
+  ]
+}
